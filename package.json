@@ -1,0 +1,17 @@
+{
+  "name": "kontent-proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node cms-scripts/buildArticles.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kentico/kontent-delivery": "^10.0.0",
+    "rxjs": "^6.6.3",
+    "turndown": "^6.0.0"
+  }
+}
