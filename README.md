@@ -18,7 +18,7 @@ To run the app:
 - Running `npm run build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
 - Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section below.
 
-Alternatively, you can run `npm run build && hugo serve` in the terminal to run just the Hugo site without the webhook functionality.
+Alternatively, you can run `npm run build && hugo serve` in the terminal to run just the Hugo site without the webhook functionality. More information about Hugo's server commands can be seen in their documentation [here](https://gohugo.io/commands/hugo_server/#readout).
 
 ### Connecting to your sample project
 If you already have a [Kentico Kontent account](https://app.kontent.ai), you can connect this application to your version of the Sample project.
