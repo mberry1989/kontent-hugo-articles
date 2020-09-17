@@ -9,7 +9,7 @@ const header_image = turndownService.turndown(`<img src="${teaser_image.url}" al
 const data = `---
 title: "${title}"
 date: ${date}
-draft: true 
+draft: false 
 ---
 ${header_image}
 ${markdown}

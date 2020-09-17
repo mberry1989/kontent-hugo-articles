@@ -17,10 +17,10 @@ const resolveItemInRichText = (item) => {
             return `{{< vimeo ${video_id} >}}`
         }
         else {
-            return `<h2>video unavailable</h2>`
+            return `> Video unavailable.`
         }
     }
-    return `<h2>resolver not available</h2>`
+    return `> Content not available.`
 }
 
 exports.resolveItemInRichText = resolveItemInRichText;
