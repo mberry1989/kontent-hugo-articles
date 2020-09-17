@@ -8,7 +8,9 @@
     "build": "node cms-scripts/buildArticles.js",
     "webhook": "node cms-scripts/webhook.js",
     "serve": "hugo server",
-    "start": "npm-run-all -p serve webhook"
+    "start": "npm-run-all -p serve webhook",
+    "serve-themed": "hugo server -t hugo_theme_pickles -w",
+    "start-themed": "npm-run-all -p serve-themed webhook"
   },
   "author": "",
   "license": "ISC",
