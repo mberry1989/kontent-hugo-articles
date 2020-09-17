@@ -1,4 +1,4 @@
-# Kentico Kontent sample Hugo article site
+# Kentico Kontent Hugo article sample
 Sample [Hugo static site generator](https://gohugo.io/) project using the [Kentico Kontent Delivery JavaScript SDK](https://github.com/Kentico/kontent-delivery-sdk-js) to retrieve content.
 
 This application is meant for use with the Dancing Goat sample project within Kentico Kontent. If you don't have your own Sample Project, any administrator of a Kentico Kontent subscription [can generate one](https://app.kontent.ai/sample-project-generator).
