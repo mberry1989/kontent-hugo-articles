@@ -16,7 +16,8 @@ To run the app:
    1. `npm start`
    
 - Running `npm run build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
-- Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section below.
+- Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section.
+- Running `npm start-themed` runs a styled version of the site. More information regarding themes can be seen in the "Using a theme" section.
 
 Alternatively, you can run `npm run build && hugo serve` in the terminal to run just the Hugo site without the webhook functionality. More information about Hugo's server commands can be seen in their documentation [here](https://gohugo.io/commands/hugo_server/#readout).
 
@@ -49,8 +50,14 @@ Webhooks can be used to create or remove markdown files from `content\articles` 
 1. Run `npm start` in the terminal to run both the site and webhook
 1. Make an edit to an article in Kentico Kontentand promote it through the workflow to the "Published" step
 
-## Adding a Theme
-> under construction.
+## Using a Theme
+Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with modified `index.html` and `list.html` layouts to target the "articles" content directory rather than the "posts" content directory.
+
+To start this project with the Pickles theme:
+1. Run `npm run start-themed
+
+To run the themeless version:
+1. Run `npm run start`
 
 ## Content administration
 1. Navigate to <https://app.kontent.ai> in your browser.
@@ -61,7 +68,7 @@ You can learn more about content editing with Kentico Kontent in our [Documentat
 
 ### This sample site also uses:
 
-[Node.js](https://nodejs.org/)
-[npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
-[Express.js](https://expressjs.com/)
-[Turndown.js](https://github.com/domchristie/turndown)
+- [Node.js](https://nodejs.org/)
+- [npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
+- [Express.js](https://expressjs.com/)
+- [Turndown.js](https://github.com/domchristie/turndown)
