@@ -53,8 +53,10 @@ Webhooks can be used to create or remove markdown files from `content\articles` 
 ## Using a Theme
 Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with modified `index.html` and `list.html` layouts to target the "articles" content directory rather than the "posts" content directory.
 
-To start this project with the Pickles theme:
-1. Run `npm run start-themed
+To start this project with the Pickles theme in the terminal run:
+1. `cd themes`
+1. `git clone -b release https://github.com/mismith0227/hugo_theme_pickles`
+1. `npm run start-themed
 
 To run the themeless version:
 1. Run `npm run start`
