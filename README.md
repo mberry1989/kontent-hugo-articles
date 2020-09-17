@@ -41,7 +41,13 @@ exports.deliveryClient = deliveryClient;
 1. Run the application from the terminal
 
 ## Setting up webhooks
-> under construction.
+Webhooks can be used to create or remove markdown files from `content\articles` when an article is published or unpublished in Kentico Kontent. The URL of the application needs to be publicly accessible, e.g. https://myboilerplate.azurewebsites.net/hook or by using a tunneling/routing service like [ngrok](https://ngrok.com/):
+
+1. [Create a webhook in Kentico Kontent](https://docs.kontent.ai/tutorials/develop-apps/integrate/webhooks#a-create-a-webhook) and point it to your application's domain with "/hook" appended to the URL. Example: https://8dbe14c768be.ngrok.io/hook
+1. Ensure that the webhook is setup for the "Publish" and "Unpublish" Delivery API triggers
+1. Open the sample site in your IDE
+1. Run `npm start` in the terminal to run both the site and webhook
+1. Make an edit to an article in Kentico Kontentand promote it through the workflow to the "Published" step
 
 ## Adding a Theme
 > under construction.
@@ -53,3 +59,9 @@ exports.deliveryClient = deliveryClient;
 
 You can learn more about content editing with Kentico Kontent in our [Documentation](https://docs.kontent.ai/).
 
+### This sample site also uses:
+
+[Node.js](https://nodejs.org/)
+[npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
+[Express.js](https://expressjs.com/)
+[Turndown.js](https://github.com/domchristie/turndown)
