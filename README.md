@@ -15,8 +15,8 @@ To run the app:
    1. `npm run build`
    1. `npm start`
    
-Running `npm run build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
-Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section below.
+- Running `npm run build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
+- Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section below.
 
 Alternatively, you can run `npm run build && hugo serve` in the terminal to run just the Hugo site without the webhook functionality.
 
