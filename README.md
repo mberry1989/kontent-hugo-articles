@@ -72,7 +72,9 @@ To run the themeless version:
 
 You can learn more about content editing with Kentico Kontent in our [Documentation](https://docs.kontent.ai/).
 
-### This sample site also uses:
+Note: This project is only setup to support the "Article" content type from the Kentico Kontent Sample project.
+
+## This sample site also uses:
 
 - [npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
 - [Express.js](https://expressjs.com/)
