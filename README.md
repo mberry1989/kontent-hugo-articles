@@ -5,7 +5,7 @@ This application is meant for use with the Dancing Goat sample project within Ke
 
 ## Application setup
 
-### Prequisites
+### Prerequisites
 - [Install Hugo](https://gohugo.io/getting-started/installing)
 - [Install Node.js](https://nodejs.org/en/)
 
