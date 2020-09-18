@@ -13,7 +13,7 @@ This application is meant for use with the Dancing Goat sample project within Ke
 To run the app:
 1. Clone the app repository with your favorite GIT client
 1. Open the solution in Visual Studio Code or your favorite IDE
-1. Update the Kontent project ID in `cms-scripts\config.js` (detailed instructions available below)
+1. Update the Kontent project ID in `cms-scripts\config.js` - detailed instructions available [below](#connecting-to-your-sample-project)
 1. From the terminal run:
    1. `npm install`
    1. `npm run build`
@@ -21,7 +21,7 @@ To run the app:
    
 - Running `npm run build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
 - Running `npm start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the "Setting up webhooks" section.
-- Running `npm start-themed` runs a styled version of the site. More information regarding themes can be seen in the "Using a theme" section.
+- To run a styled version of the site follow steps in the [Using a theme](#using-a-theme) section.
 
 Alternatively, you can run `npm run build && hugo serve` in the terminal to run just the Hugo site without the webhook functionality. More information about Hugo's server commands can be seen in their documentation [here](https://gohugo.io/commands/hugo_server/#readout).
 
@@ -62,7 +62,10 @@ To start this project with the Pickles theme in the terminal run:
 1. `git clone -b release https://github.com/mismith0227/hugo_theme_pickles`
 1. `npm run start-themed`
 
+Note: the `start-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downlaoded theme to override the default layout files.
+
 To run the themeless version:
+1. Ensure that `layout/_default` exists in the root layout folder
 1. Run `npm run start`
 
 ## Content administration
