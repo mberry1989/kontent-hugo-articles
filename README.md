@@ -5,6 +5,10 @@ This application is meant for use with the Dancing Goat sample project within Ke
 
 ## Application setup
 
+### Prequisites
+[Install Hugo](https://gohugo.io/getting-started/installing)
+[Install Node.js](https://nodejs.org/en/)
+
 ### Running the application
 To run the app:
 1. Clone the app repository with your favorite GIT client
@@ -56,7 +60,7 @@ Hugo has a large list of [available themes](https://themes.gohugo.io/) that can 
 To start this project with the Pickles theme in the terminal run:
 1. `cd themes`
 1. `git clone -b release https://github.com/mismith0227/hugo_theme_pickles`
-1. `npm run start-themed
+1. `npm run start-themed`
 
 To run the themeless version:
 1. Run `npm run start`
@@ -70,7 +74,6 @@ You can learn more about content editing with Kentico Kontent in our [Documentat
 
 ### This sample site also uses:
 
-- [Node.js](https://nodejs.org/)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
 - [Express.js](https://expressjs.com/)
 - [Turndown.js](https://github.com/domchristie/turndown)
