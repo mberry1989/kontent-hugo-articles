@@ -9,8 +9,9 @@
     "webhook": "node cms-scripts/webhook.js",
     "serve": "hugo server",
     "start": "npm-run-all -p serve webhook",
+    "rename": "node cms-scripts/renameLayout.js",
     "serve-themed": "hugo server -t hugo_theme_pickles -w",
-    "start-themed": "npm-run-all -p serve-themed webhook"
+    "start-themed": "npm-run-all -p rename serve-themed webhook"
   },
   "author": "",
   "license": "ISC",
