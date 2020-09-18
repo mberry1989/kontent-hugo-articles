@@ -62,7 +62,7 @@ To start this project with the Pickles theme in the terminal run:
 1. `git clone -b release https://github.com/mismith0227/hugo_theme_pickles`
 1. `npm run start-themed`
 
-Note: the `start-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downlaoded theme to override the default layout files.
+Note: the `start-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downloaded theme to override the default layout files.
 
 To run the themeless version:
 1. Ensure that `layout/_default` exists in the root layout folder
