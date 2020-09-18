@@ -54,6 +54,9 @@ Webhooks can be used to create or remove markdown files from `content\articles` 
 1. Run `npm start` in the terminal to run both the site and webhook
 1. Make an edit to an article in Kentico Kontentand promote it through the workflow to the "Published" step
 
+### Webhook validation
+> coming soon.  In the meantime, reference the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/webhooks#a-validate-received-notifications)
+
 ## Using a Theme
 Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with modified `index.html` and `list.html` layouts to target the "articles" content directory rather than the "posts" content directory.
 
