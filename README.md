@@ -58,11 +58,16 @@ Webhooks can be used to create or remove markdown files from `content\articles` 
 > coming soon.  In the meantime, reference the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/webhooks#a-validate-received-notifications)
 
 ## Using a Theme
-Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with modified `index.html` and `list.html` layouts to target the "articles" content directory rather than the "posts" content directory.
+Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with minimally modified layout files to target the "articles" content directory rather than the "posts" content directory. More information about Hugo's templating syntax can be seen here: https://gohugo.io/templates/introduction/ .
 
 To start this project with the Pickles theme in the terminal run:
+1. `mkdir themes`
 1. `cd themes`
 1. `git clone -b release https://github.com/mismith0227/hugo_theme_pickles`
+1. Open `index.html` and modify the "where" statement line 3:
+`(where .Site.RegularPages "Type" "posts")`
+to 
+`(where .Site.RegularPages "Type" "articles")`
 1. `npm run start-themed`
 
 Note: the `start-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downloaded theme to override the default layout files.
