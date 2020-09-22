@@ -9,9 +9,11 @@
     "webhook": "node cms-scripts/webhook.js",
     "serve": "hugo server",
     "start": "npm-run-all -p build webhook serve",
-    "rename": "node cms-scripts/renameLayout.js",
-    "serve-themed": "hugo server -t hugo_theme_pickles -w",
-    "start-themed": "npm-run-all -p rename serve-themed webhook"
+    "start-themed": "npm-run-all -p rename serve-themed webhook",
+    "theme:add": "mkdir themes && cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
+    "theme:rename": "node cms-scripts/renameLayout.js",
+    "theme:serve": "hugo -b $DEPLOY_PRIME_URL -t hugo_theme_pickles",
+    "netlify:build": "npm-run-all build theme:*"
   },
   "author": "",
   "license": "ISC",
