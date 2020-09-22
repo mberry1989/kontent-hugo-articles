@@ -1,5 +1,6 @@
 # Kentico Kontent Hugo article sample
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3609d056-2b93-44ed-80d9-9a3646ceb25e/deploy-status)](https://app.netlify.com/sites/vigorous-curie-3c2b90/deploys)
+A themed demo of this site can be seen [here](https://netlify--vigorous-curie-3c2b90.netlify.app/)
 
 Sample [Hugo static site generator](https://gohugo.io/) project using the [Kentico Kontent Delivery JavaScript SDK](https://github.com/Kentico/kontent-delivery-sdk-js) to retrieve content.
 
