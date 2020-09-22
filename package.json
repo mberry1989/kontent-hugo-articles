@@ -13,7 +13,7 @@
     "start-themed": "npm-run-all -p rename serve-themed webhook",
     "theme:add": "mkdir themes && cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
     "theme:rename": "node cms-scripts/renameLayout.js",
-    "theme:serve": "hugo -t hugo_theme_pickles -b $DEPLOY_PRIME_URL ",
+    "theme:serve": "hugo -b $DEPLOY_PRIME_URL -t hugo_theme_pickles  ",
     "netlify:build": "npm-run-all build theme:*",
     "netlify:deploy": "npm-run-all build theme:serve"
   },
