@@ -5,19 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node cms-scripts/buildArticles.js",
-    "webhook": "node cms-scripts/webhook.js",
+    "cms:build": "node cms-scripts/buildArticles.js",
+    "cms:webhook": "node cms-scripts/webhook.js",
 
     "local:serve": "hugo server -b http://localhost:1313",
     "local:serve-themed": "hugo server -t hugo_theme_pickles -b http://localhost:1313",
-    "local:start": "npm-run-all -p build webhook local:serve",  
-    "local:start-themed": "npm-run-all -p rename local:serve-themed webhook",
+    "local:start": "npm-run-all -p cms:build cms:webhook local:serve",  
+    "local:start-themed": "npm-run-all -p rename local:serve-themed cms:webhook",
     
     "theme:add": "cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
     "theme:rename": "node cms-scripts/renameLayout.js",
     "theme:serve": "hugo -b $DEPLOY_PRIME_URL -t hugo_theme_pickles",
 
-    "netlify:build": "npm-run-all build theme:*"
+    "netlify:build": "npm-run-all cms:build theme:*"
   },
   "author": "",
   "license": "ISC",
