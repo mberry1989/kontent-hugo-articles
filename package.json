@@ -13,7 +13,7 @@
     "local:start": "npm-run-all -p build webhook local:serve",  
     "local:start-themed": "npm-run-all -p rename local:serve-themed webhook",
     
-    "theme:add": "mkdir themes && cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
+    "theme:add": "cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
     "theme:rename": "node cms-scripts/renameLayout.js",
     "theme:serve": "hugo -b $DEPLOY_PRIME_URL -t hugo_theme_pickles",
 
