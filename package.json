@@ -8,7 +8,7 @@
     "build": "node cms-scripts/buildArticles.js",
     "webhook": "node cms-scripts/webhook.js",
     "serve": "hugo server",
-    "start": "npm-run-all -p build hugo webhook",
+    "start": "npm-run-all -p build webhook serve",
     "rename": "node cms-scripts/renameLayout.js",
     "serve-themed": "hugo server -t hugo_theme_pickles -w",
     "start-themed": "npm-run-all -p rename serve-themed webhook"
