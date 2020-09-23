@@ -80,7 +80,7 @@ Note: This project is only setup to support the "Article" content type from the 
 ## Deploying to Netlify
 When deploying to [Netlify](https://www.netlify.com/), set:
 1. Build Command: `npm run netlify:build`
-1. Publish Directory: `Public`
+1. Publish Directory: `public`
 
 as well as an [environmental variable](https://docs.netlify.com/configure-builds/environment-variables/):
 1. PROJECT_ID: your_project_id (see [Connecting to your sample project](#connecting-to-your-sample-project))
