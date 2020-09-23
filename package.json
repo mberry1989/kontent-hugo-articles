@@ -5,19 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node cms-scripts/buildArticles.js",
-    "webhook": "node cms-scripts/webhook.js",
-    "serve": "hugo server",
-    "start": "npm-run-all -p serve webhook",
-    "rename": "node cms-scripts/renameLayout.js",
-    "serve-themed": "hugo server -t hugo_theme_pickles -w",
-    "start-themed": "npm-run-all -p rename serve-themed webhook"
+    "cms:build": "node cms-scripts/buildArticles.js",
+    "cms:webhook": "node cms-scripts/webhook.js",
+
+    "local:serve": "hugo server -b http://localhost:1313",
+    "local:start": "npm-run-all -p cms:build cms:webhook local:serve", 
+
+    "local:serve-themed": "hugo server -t hugo_theme_pickles -b http://localhost:1313", 
+    "local:build-themed": "npm-run-all theme:add theme:rename",
+    "local:start-themed": "npm-run-all -p local:serve-themed cms:webhook",
+    
+    "theme:add": "cd themes && git submodule add https://github.com/kentico-michaelb/hugo_theme_pickles",
+    "theme:rename": "node cms-scripts/renameLayout.js",
+    "theme:serve": "hugo -b $DEPLOY_PRIME_URL -t hugo_theme_pickles",
+
+    "netlify:build": "npm-run-all cms:build theme:*"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@kentico/kontent-delivery": "^10.0.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "rxjs": "^6.6.3",
     "turndown": "^6.0.0"
