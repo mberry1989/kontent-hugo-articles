@@ -20,14 +20,14 @@ To run the app:
 1. Update the Kontent project ID in `.env` - detailed instructions available [below](#connecting-to-your-sample-project)
 1. From the terminal run:
    1. `npm install`
-   1. `npm run cms:build`
+   1. `npm run cms:prepare`
    1. `npm run local:start`
    
-- Running `npm run cms:build` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
+- Running `npm run cms:prepare` creates markdown copies of the Dancing Goat sample articles in the `content/articles` directory.
 - Running `npm run local:start` starts the Hugo server on `http://localhost:1313` and a webhook endpoint at `http://localhost:3000` . Information regarding webhooks can be seen in the [Setting up webhooks](#setting-up-webhooks) section.
 - To run a styled version of the site follow steps in the [Using a theme](#using-a-theme) section.
 
-Alternatively, you can run `npm run cms:build && local:serve` in the terminal to run just the Hugo site without the webhook functionality.
+Alternatively, you can run `npm run cms:prepare && local:serve` in the terminal to run just the Hugo site without the webhook functionality.
 
 ### Connecting to your sample project
 If you already have a [Kentico Kontent account](https://app.kontent.ai), you can connect this application to your version of the Sample project.
@@ -49,20 +49,20 @@ Webhooks can be used to create or remove markdown files from `content\articles` 
 1. Make an edit to an article in Kentico Kontent and promote it through the workflow to the "Published" step
 
 ### Webhook validation
-> coming soon.  In the meantime, reference the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/webhooks#a-validate-received-notifications)
+Reference the [Kentico Kontent documentation.](https://docs.kontent.ai/tutorials/develop-apps/integrate/webhooks#a-validate-received-notifications)
 
 ## Using a Theme
 Hugo has a large list of [available themes](https://themes.gohugo.io/) that can be applied to your site and modified to fit your needs. This site uses a [forked version](https://github.com/kentico-michaelb/hugo_theme_pickles) of the [Pickles](https://github.com/mismith0227/hugo_theme_pickles/tree/release) theme with modified `index.html` and `head.html` layouts.
 
 To add the Pickles theme, in the terminal run:
-- `local:build-themed`
+- `local:prepare-themed`
 
 To run the site locally with the Pickles theme run:
 - `"local:serve-themed"` (without webhooks)
 OR
 - `"local:start-themed"` (with webhooks. See the: [Setting up webhooks](#setting-up-webhooks) section)
 
-Note: the `local:build-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downloaded theme to override the default layout files.
+Note: the `local:prepare-themed` command renames the root `layout/_default` folder to `layout/default`to allow the downloaded theme to override the default layout files.
 
 To run the themeless version:
 1. Ensure that `layout/_default` exists in the root layout folder
