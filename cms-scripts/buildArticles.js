@@ -29,8 +29,8 @@ const subscription = deliveryClient.items()
             //convert JSON values to markdown
             const data = markdownConverter.convert(title, date, body_copy, teaser_image)
 
-        fs.writeFileSync(`content/articles/${codename}.md`, data)
-    }
+            fs.writeFileSync(`content/articles/${codename}.md`, data)
+        }
         subscription.unsubscribe();
     });
 
