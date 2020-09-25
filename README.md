@@ -14,6 +14,7 @@ This application is meant for use with the Dancing Goat sample project within Ke
 - [Using a Theme](#using-a-theme)
 - [Content Administration](#content-administration)
 - [Deploying to Netlify](#deploying-to-netlify)
+- [Getting Support](#getting-support-and-contributing)
 
 ## Application Setup
 
@@ -265,3 +266,6 @@ as well as an [environmental variable](https://docs.netlify.com/configure-builds
 - [npm-run-all](https://github.com/mysticatea/npm-run-all/tree/bf91f94ce597aa61da37d2e4208ce8c48bc86673)
 - [Express.js](https://expressjs.com/)
 - [Turndown.js](https://github.com/domchristie/turndown)
+
+## Getting Support and Contributing
+Ways to contribute and where to get support can be seen in the [contributing guidelines here](https://github.com/kentico-michaelb/kontent-hugo-articles/blob/master/CONTRIBUTING.md).
