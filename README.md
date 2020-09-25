@@ -9,6 +9,7 @@ This application is meant for use with the Dancing Goat sample project within Ke
 ## Table of Contents
 - [Application Setup](#application-setup)
 - [How It Works](#how-it-works)
+  - [Resolving Links and Content Items in Rich Text](#resolving-links-and-content-items-in-rich-text)
 - [Setting up Webhooks](#setting-up-webhooks)
 - [Using a Theme](#using-a-theme)
 - [Content Administration](#content-administration)
